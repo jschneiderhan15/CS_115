@@ -1,0 +1,65 @@
+#Jack Schneiderhan
+#I pledge my honor that I have abided by the Stevens Honor System
+
+#state 0 with no surroundings: go one step N
+0 xxxx -> N 0
+
+#state 0 with wall to top and right: go one step S
+0 NExx -> S 1
+
+#state 1 with no surroundings: go one step S
+1 xxxx -> S 1
+
+#state 1 with wall to bottom and left: go W one step
+1 xExS -> W 2
+
+#state 2 with no surroundings: go one step N
+2 xxxx -> N 0
+
+#state 0 with wall to top left and right: go one step S
+0 NEWx -> S 1
+
+#state 1 with wall to bottom left and right: go one step N
+1 xEWS -> N 4
+
+#state 4 with no surroundings: go one step W
+4 xxxx -> W 2
+
+#state 2 with wall to bottom and left: go one step N
+2 xxWS -> N 0
+
+#state 0 with wall to top and left: go one step S
+0 NxWx -> S 5
+
+#state 5 with no surroundings: go one step E
+5 xxxx -> W 2
+
+#state 2 with wall to top and left: go one step S
+2 NxWx -> S 1
+
+#state 1 with wall to bottom and left: go one step N
+1 xxWS -> N 4
+
+#state 2 with wall to top left and bottom: go one step E
+2 NxWS -> E 6
+
+#state 6 with no surroundings: go one step E
+6 xxxx -> E 6
+
+#state 6 with wall to top right and bottom: go one step W
+6 NExS -> W 2
+
+#state 0 with wall to left and bottom: go one step N 
+0 xxWS -> N 0
+
+#state 0 with wall to right and bottom: go one step N
+0 xExS -> N 0
+
+#state 0 with wall to left bottom and right: go one step N
+0 xEWS -> N 0
+
+#state 0 with wall to the top left and bottom: go one step E
+0 NxWS -> E 6
+
+#state 0 with wall to the top right and bottom: go one step W
+0 NExS -> W 2
